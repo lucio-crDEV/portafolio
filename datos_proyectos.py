@@ -15,10 +15,10 @@ proyectos = [
     },
     {
         'id': 3,
-        'titulo': 'Gitclonatore',
-        'descripcion': 'GitClonatore es una herramienta de línea de comandos que te permite clonar repositorios de GitHub de un usuario específico.',
-        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rCK6-wD8yhChUUkstF9X8mQBd6pgcpGbhOtqQXg6jx7LfX7Oo3ytfVKSEPh-ouvKjp_HbIU3PSsYU35m77_sRl4z5ZTw=w1920-h961', 
-        'url_proyecto': 'https://github.com/lucio-crDEV/gitclonatore',
+        'titulo': 'Comunas por Región Chile',
+        'descripcion': 'Este script muestra una tabla con las regiones de Chile y la lista de comunas para cada región, obteniendo los datos de la API proporcionada por el Gobierno de Chile.',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81o-x24tshw-0vx00oHzXu9VfMmCbC66Q5ayEbsgHRd1Nc0opsBR0SsMiqsEx21nS4yOvRr2DnpPFsBGkteq_MB3LFGR8A=w1920-h961', 
+        'url_proyecto': 'https://github.com/lucio-crDEV/comunasPorRegion-Chile',
     },
     {
         'id': 4,
@@ -26,6 +26,13 @@ proyectos = [
         'descripcion': 'Red social para conectar las municipalidades con los vecinos y potenciar prácticas sustentables. Buscamos fomentar la Educación Ambiental y la Participación Ciudadana.',
         'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81p4r9Hpmnc6Xl6LtIvOvzWGFEliC5uQe2TTig-LBMT98Ltpsrm-EpekxCIGklwj4lh2Yspp5PufCObbAoijwqCh6xgq=w1920-h961', 
         'url_proyecto': 'https://barriopanal.cl/',
+    },
+    {
+        'id': 5,
+        'titulo': 'Gitclonatore',
+        'descripcion': 'GitClonatore es una herramienta de línea de comandos que te permite clonar repositorios de GitHub de un usuario específico.',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rCK6-wD8yhChUUkstF9X8mQBd6pgcpGbhOtqQXg6jx7LfX7Oo3ytfVKSEPh-ouvKjp_HbIU3PSsYU35m77_sRl4z5ZTw=w1920-h961', 
+        'url_proyecto': 'https://github.com/lucio-crDEV/gitclonatore',
     },
 
     # Agrega más proyectos según sea necesario
