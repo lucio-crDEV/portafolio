@@ -8,17 +8,17 @@ proyectos = [
     },
     {
         'id': 2,
-        'titulo': 'GiffApp',
-        'descripcion': 'Busca y comparte gifs',
-        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qYwtX40XcP1tV_41ipFhvNtHsSCcdo0QIawV6ubrxOY0I9-hZU1VXQqJcdintvm9H1aAA6BOcHaMsMxN-VjPZtRK5kkw=w1920-h961', 
-        'url_proyecto': 'https://giffapp.netlify.app/',
-    },
-    {
-        'id': 3,
         'titulo': 'Comunas por Región Chile',
         'descripcion': 'Este script muestra una tabla con las regiones de Chile y la lista de comunas para cada región, obteniendo los datos de la API proporcionada por el Gobierno de Chile.',
         'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81o-x24tshw-0vx00oHzXu9VfMmCbC66Q5ayEbsgHRd1Nc0opsBR0SsMiqsEx21nS4yOvRr2DnpPFsBGkteq_MB3LFGR8A=w1920-h961', 
         'url_proyecto': 'https://github.com/lucio-crDEV/comunasPorRegion-Chile',
+    },
+    {
+        'id': 3,
+        'titulo': 'GiffApp',
+        'descripcion': 'Busca y comparte gifs',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qYwtX40XcP1tV_41ipFhvNtHsSCcdo0QIawV6ubrxOY0I9-hZU1VXQqJcdintvm9H1aAA6BOcHaMsMxN-VjPZtRK5kkw=w1920-h961', 
+        'url_proyecto': 'https://giffapp.netlify.app/',
     },
     {
         'id': 4,
@@ -29,10 +29,10 @@ proyectos = [
     },
     {
         'id': 5,
-        'titulo': 'Gitclonatore',
-        'descripcion': 'GitClonatore es una herramienta de línea de comandos que te permite clonar repositorios de GitHub de un usuario específico.',
-        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rCK6-wD8yhChUUkstF9X8mQBd6pgcpGbhOtqQXg6jx7LfX7Oo3ytfVKSEPh-ouvKjp_HbIU3PSsYU35m77_sRl4z5ZTw=w1920-h961', 
-        'url_proyecto': 'https://github.com/lucio-crDEV/gitclonatore',
+        'titulo': 'Credit Card Angular',
+        'descripcion': 'Componente desarrollado en Angular como mockup para Tarjetas de Crédito',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rNjRVDli5Uw01P9v4kutjbLt0xvZ0DQFsclECy8lk7J238bjUEKNdXrNh76woUgfwkuC_a4tQJztfa8leGnDRtlTWfrg=w1920-h961', 
+        'url_proyecto': 'https://www.youtube.com/watch?v=RDginr1-Rgo',
     },
     {
         'id': 6,
@@ -43,17 +43,10 @@ proyectos = [
     },
     {
         'id': 7,
-        'titulo': 'Credit Card Angular',
-        'descripcion': 'Componente desarrollado en Angular como mockup para Tarjetas de Crédito',
-        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rNjRVDli5Uw01P9v4kutjbLt0xvZ0DQFsclECy8lk7J238bjUEKNdXrNh76woUgfwkuC_a4tQJztfa8leGnDRtlTWfrg=w1920-h961', 
-        'url_proyecto': 'https://www.youtube.com/watch?v=RDginr1-Rgo',
+        'titulo': 'Gitclonatore',
+        'descripcion': 'GitClonatore es una herramienta de línea de comandos que te permite clonar repositorios de GitHub de un usuario específico.',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rCK6-wD8yhChUUkstF9X8mQBd6pgcpGbhOtqQXg6jx7LfX7Oo3ytfVKSEPh-ouvKjp_HbIU3PSsYU35m77_sRl4z5ZTw=w1920-h961', 
+        'url_proyecto': 'https://github.com/lucio-crDEV/gitclonatore',
     },
-
     # Agrega más proyectos según sea necesario
 ]
-
-def buscar_proyecto_por_id(id):
-    for proyecto in proyectos:
-        if proyecto['id'] == id:
-            return proyecto
-    return None

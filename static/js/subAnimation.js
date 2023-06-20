@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     typeWriter("Fullstack Developer", animatedTitle2);
   
     setTimeout(() => {
-      typeWriter("Nubes Nuevas, el futuro hoy", animatedTitle3)
+      typeWriter("Nubes Nuevas, el Futuro Hoy", animatedTitle3)
     }, 2000);
   });
   
