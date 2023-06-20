@@ -1,8 +1,12 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from datos_proyectos import proyectos, buscar_proyecto_por_id
 from flask import request
 
 app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return redirect('/home')
 
 @app.route('/home')
 def portafolio():
