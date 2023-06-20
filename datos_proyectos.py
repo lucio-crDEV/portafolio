@@ -34,6 +34,20 @@ proyectos = [
         'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rCK6-wD8yhChUUkstF9X8mQBd6pgcpGbhOtqQXg6jx7LfX7Oo3ytfVKSEPh-ouvKjp_HbIU3PSsYU35m77_sRl4z5ZTw=w1920-h961', 
         'url_proyecto': 'https://github.com/lucio-crDEV/gitclonatore',
     },
+    {
+        'id': 6,
+        'titulo': 'WSL ZSH Script Setup',
+        'descripcion': 'Scripts de configuración para Windows Subsystem for Linux (WSL) y Zsh. Estos scripts te ayudarán a instalar y configurar las dependencias necesarias para comenzar a desarrollar en tu entorno WSL.',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81qVnyYg1tFHDMJxUvt_CHDAZ2VshMdVIh09L4IYoSCSz1V3SDc5rBQ5x1mwAaWUUXIe6wPKcm5A75C7ZEkdq9G9XOIeqA=w1920-h961', 
+        'url_proyecto': 'https://github.com/lucio-crDEV/wsl-zsh-setup',
+    },
+    {
+        'id': 7,
+        'titulo': 'Credit Card Angular',
+        'descripcion': 'Componente desarrollado en Angular como mockup para Tarjetas de Crédito',
+        'imagen_id': 'https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rNjRVDli5Uw01P9v4kutjbLt0xvZ0DQFsclECy8lk7J238bjUEKNdXrNh76woUgfwkuC_a4tQJztfa8leGnDRtlTWfrg=w1920-h961', 
+        'url_proyecto': 'https://www.youtube.com/watch?v=RDginr1-Rgo',
+    },
 
     # Agrega más proyectos según sea necesario
 ]
