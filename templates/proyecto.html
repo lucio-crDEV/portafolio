@@ -1,0 +1,20 @@
+{% extends 'portafolio.html' %}
+
+{% block content %}
+<section class="z-10">
+    <div class="text-center px-32 mb-12">
+        <h2 class="text-2xl font-bold mb-4 text-white"><span class="cursor-default transition duration-300">📌&nbsp;{{ proyecto['titulo'] }}</span>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="font-semibold hover:text-pink-200" href="{{ proyecto['url_proyecto'] }}" target="_blank">🌐&nbsp;Sitio Web</a></h2>
+        <p class="text-xl font-semibold text-white mb-4">{{ proyecto['descripcion'] }}</p>
+    </div>
+    <div class="flex justify-center">
+        <img class="object-cover w-screen h-max mx-32 rounded-3xl mb-4" src="{{ proyecto['imagen_id'] }}"
+            alt="{{ proyecto['titulo'] }}" loading="lazy">
+    </div>
+</section>
+
+
+
+<form class="absolute top-6 left-8 z-10" action="{{ url_for('portafolio') }}" method="get">
+    <button type="submit" class="rounded-full bg-green-400 hover:bg-green-500 text-white px-4 py-2">Atrás</button>
+</form>
+{% endblock %}

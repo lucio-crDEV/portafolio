@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon2.png') }}" type="image/x-icon" />
+  <title>Lucio Cardenas Rodriguez</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bgStyle.css') }}"> -->
+  <!-- TailwindCSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+  <!-- Observer GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/Observer.min.js"></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+  <style scoped>
+
+  </style>
+</head>
+
+<body>
+  {% if request.path.startswith('/home') %}
+  <nav id="nav">
+    <div class="navBar animate__animated animate__fadeInDown animate__delay-1s">
+      <p class="cursor-pointer text-white text-center text-xl">
+        <span class="mx-4"><a class="hover:text-red-300" href="#proyectos">Proyectos</a></span>|
+        <span class="mx-4"><a class="hover:text-red-300" href="#skills">Skills</a></span>|
+        <span class="mx-4"><a class="hover:text-red-300" href="#contacto">Contact</a></span>
+      </p>
+    </div>
+  </nav>
+  {% endif %}
+  <div>
+    <!-- titulo -->
+    <div class="flex flex-col align-bottom ease-in-out duration-1000 select-none">
+      <div class="flex justify-center relative">
+        <p id="titulo1"
+          class="flex font-bold h1 text-[#e69877] text-center mt-24 text-4xl relative justify-start glitch-title"
+          onclick="recargar()">
+          LitimlessExperience
+        </p>
+      </div>
+      <br>
+      <div class="flex justify-center relative">
+        <p id="titulo2"
+          class="flex font-semibold text-[#f4a17e] text-center h1 mt-4 text-4xl relative justify-start z-50">
+          &nbsp;
+        </p>
+      </div>
+      <div class="flex justify-center relative">
+        <p id="titulo3"
+          class="flex font-semibold text-[#f4a17e] text-center h1 mb-24 text-4xl relative justify-start z-50">
+          &nbsp;
+        </p>
+      </div>
+    </div>
+  </div>
+  <section id="proyectosSection">
+    <div id="proyectos" class="h-4"></div>
+    <!-- proyectos -->
+    <div class="content animate__animated animate__fadeIn animate__delay-2s">
+      {% block content %}
+      <div class="grid grid-cols-2 m-24 px-24 gap-24">
+        {% for proyecto in proyectos %}
+        <a href="{{ url_for('mostrar_proyecto', id=proyecto['id']) }}">
+          <div
+            class="card bg-white p-4 rounded-lg select-none cursor-pointer ease-in-out duration-700 hover:bg-red-400 hover:bg-opacity-80 hover:text-white">
+            <h2 class="text-xl font-semibold opacity-80 text-center tracking-widest">
+              {{ proyecto['titulo'] }}
+            </h2>
+            <hr class="my-4 mx-48">
+            <p class="mt-2">{{ proyecto['descripcion'] }}</p>
+            <img class="mt-4 rounded" src="{{ proyecto['imagen_id'] }}" alt="{{ proyecto['titulo'] }}" loading="lazy" />
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+      {% endblock %}
+    </div>
+  </section>
+  {% if request.path.startswith('/home') %}
+  <section id="skillsSection">
+    <div id="skills" class="h-screen">
+
+    </div>
+  </section>
+  {% endif %}
+  {% if request.path.startswith('/home') %}
+  <section id="contactoSection">
+    <div id="contacto" class="h-screen">
+
+    </div>
+  </section>
+  {% endif %}
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <!-- <script src="{{ url_for('static', filename='js/bgAnimation.js') }}" type="module"></script> -->
+  <script src="{{ url_for('static', filename='js/subAnimation.js') }}" type="module"></script>
+</body>
+
+</html>
