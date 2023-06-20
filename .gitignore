@@ -401,3 +401,6 @@ pyrightconfig.json
 bin/
 /lib64
 .vercel
+
+# Local Netlify folder
+.netlify
