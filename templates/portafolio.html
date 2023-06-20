@@ -37,6 +37,7 @@
         </p>
       </div>
       <br>
+      {% if request.path.startswith('/home') %}
       <div class="flex justify-center relative">
         <p id="titulo2"
           class="flex font-semibold text-[#f4a17e] text-center h1 mt-4 text-4xl relative justify-start z-50">
@@ -49,6 +50,7 @@
           &nbsp;
         </p>
       </div>
+      {% endif %}
     </div>
   </div>
   <section id="proyectosSection">
