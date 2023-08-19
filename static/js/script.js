@@ -15,12 +15,13 @@ const recargar = () => {
     var contactoSection = document.getElementById("contactoSection");
     contactoSection.innerHTML = contactoSection.innerHTML;
 };
-
+var valor = 0
 // Generar un retraso aleatorio entre 0.3s y 0.6s
-function generateRandomDelay() {
-  return Math.random() * 0.9 + 1;
+const generateRandomDelay = () => {
+  valor = Math.random() * 0.9 + 1;
+  console.log({valor});
+  const glitchTitle = document.getElementsByClassName("titulo");
+  const delay = generateRandomDelay();
+  glitchTitle.style.animationDelay() = `${delay}s`;
 }
 
-const glitchTitle = document.getElementById("titulo1");
-const delay = generateRandomDelay();
-glitchTitle.style.animationDelay = `${delay}s`;

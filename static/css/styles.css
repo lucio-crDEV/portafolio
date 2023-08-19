@@ -11,22 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/*Principal*/
 body,
 html,
 section {
   max-width: 100% !important;
   height: fit-content;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background-color: rgb(230, 230, 230);
-}
-::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.466);
-  border-radius: 10px;
 }
 
 .navBar {
@@ -39,6 +29,7 @@ section {
 
 .card {
   transition: 500ms;
+  background-color: #ffffffaf;
 }
 
 .card:hover {
@@ -89,6 +80,7 @@ section {
   color: #ffffffda;
 }
 
+/*about*/
 #skillsContent {
   background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -98,6 +90,7 @@ section {
   cursor: default;
 }
 
+/*animation (mejorar rgb)*/
 @keyframes wiggle {
   0% {
     -webkit-transform: skewX(0deg);
@@ -142,6 +135,18 @@ section {
   100% {
     -webkit-transform: skewX(0deg);
   }
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(230, 230, 230);
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.466);
+  border-radius: 10px;
 }
 
 /* Media query para celular */
