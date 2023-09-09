@@ -8,8 +8,10 @@
   <title>Lucio Cardenas Rodriguez</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" />
   <meta property="og:type" content="website">
-  <meta property="og:image" itemprop="image primaryImageOfPage" content="https://live.staticflickr.com/65535/53174601630_fb14394712_o.png">
-  <meta property="og:description" content="Bienvenidos a mi sitio aquí encontrarás mis proyectos, links y medios de contacto más actualizados.">
+  <meta property="og:image" itemprop="image primaryImageOfPage"
+    content="https://live.staticflickr.com/65535/53174601630_fb14394712_o.png">
+  <meta property="og:description"
+    content="Bienvenidos a mi sitio aquí encontrarás mis proyectos, links y medios de contacto más actualizados.">
   <meta property="og:url" content="https://luciocardenas.pythonanywhere.com/">
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/61042a5f3b.js" crossorigin="anonymous"></script>
@@ -17,18 +19,9 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet" />
   <!-- Animate css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  </style>
 </head>
 
 <body>
-  <!-- imagen -->
-  <div class="w-screen lg:w-full absolute opacity-20"
-    style="background-image: url_for('static', filename='img/polygon.png')">
-    <img src="{{url_for('static', filename='img/polygon.png')}}">
-    <img src="{{url_for('static', filename='img/polygon.png')}}">
-    <img src="{{url_for('static', filename='img/polygon.png')}}">
-    <img class="h-full w-full" src="{{url_for('static', filename='img/polygon.png')}}">
-  </div>
   {% if request.path.startswith('/home') %}
   <nav id="nav" class="w-screen">
     <div class="navBar animate__animated animate__fadeInDown animate__delay-1s w-screen">
@@ -90,8 +83,8 @@
   </section>
   <!-- skill -->
   <section id="skillsSection">
-    <div id="skills" class="h-screen pt-28 py-12 mx-8">
-      <div id="skillsContent" class="flex-wrap flex-row lg:mx-48 mx-auto text-white lg:p-8 p-10 mb-8">
+    <div id="skills" class="h-screen pt-28 py-12 mx-8 mb-64">
+      <div id="skillsContent" class="glassmorfismo flex-wrap flex-row lg:mx-48 mx-auto text-white lg:p-8 p-10 mb-8">
 
         <h1 class="text-2xl font-semibold text-center">Lucio Cárdenas Rodríguez</h1>
         <div class="flex-1">
@@ -104,37 +97,48 @@
             Flask, Django, JavaScript, Angular, PHP, HTML, CSS y diversos frameworks.</p>
           <div class="text-white grid grid-cols-4 lg:mx-60 lg:gap-0 lg:scale-100 lg:py-16 lg:relative lg:left-3
                       gap-12 relative right-20 top-10">
-              <img class="svg" src="{{url_for('static', filename='svg/tuerca.svg')}}">
-              <img class="svg" src="{{url_for('static', filename='svg/html.svg')}}">
-              <img class="svg" src="{{url_for('static', filename='svg/css3.svg')}}">
-              <img class="svg" src="{{url_for('static', filename='svg/angular.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/tuerca.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/html.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/css3.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/angular.svg')}}">
           </div>
-          <p class="md:px-40 lg:mt-4 mt-20 text-center">Actualmente, me estoy especializando en ciberseguridad en
-            entornos Linux, con enfoque en Parrot OS. Mis
+          <p class="md:px-40 lg:mt-4 mt-20 text-center">Actualmente, estoy especializándome en ciberseguridad en
+            entornos Linux, específicamente en Parrot OS. Mis
             áreas
-            de interés incluyen el compromiso de sistemas, pentesting y la elevación de privilegios desde la shell.
+            de interés incluyen la seguridad de sistemas informaticos, pentesting y la elevación de privilegios desde la
+            shell.
             Para
-            ampliar mis conocimientos, me estoy capacitando en técnicas de hacking ético y estrategias de defensa en
+            ampliar mis conocimientos, actualmente, me encuentro capacitándome en Linux, hacking ético y estrategias de
+            defensa en
             la
             academia Hack4u.</p>
           <div class="text-white grid grid-cols-4 lg:mx-56 lg:gap-0 lg:scale-100 lg:py-16 lg:relative lg:left-3
           gap-12 relative right-20 top-10">
-              <img class="svg" src="{{url_for('static', filename='svg/javascript.svg')}}">
-              <img class="svg" src="{{url_for('static', filename='svg/python.svg')}}">
-              <img class="svg" src="{{url_for('static', filename='svg/linux.svg')}}">
-              <img class="svg" src="{{url_for('static', filename='svg/computadora.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/javascript.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/python.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/linux.svg')}}">
+            <img class="svg" src="{{url_for('static', filename='svg/computadora.svg')}}">
           </div>
           <p class="md:px-40 lg:mt-4 mt-20 text-center">Mi meta es formar parte de un equipo de Red Team, donde pueda
-            aplicar mis habilidades en ciberseguridad para
-            evaluar y fortalecer la seguridad de sistemas y redes. Me entusiasma la oportunidad de contribuir a la
+            aplicar mis habilidades y continuar aprendiendo por el área que me apasiona. Evaluar y fortalecer la
+            seguridad de sistemas y redes. Personalmente me entusiasma la oportunidad de contribuir a la
             protección de la información y la mitigación de riesgos en entornos digitales.</p>
           </p>
         </div>
       </div>
   </section>
   <section id="contactoSection">
-    <div id="contacto" class="h-screen pt-24">
-
+    <div id="contacto" class="h-14"></div>
+    <div class="glassmorfismo h-48">
+      <div class="text-white">
+        <div class="flex justify-center gap-12">
+          <button class="mt-12 border border-sky-500 rounded-full py-2 px-4 hover:bg-red-400 hover:bg-opacity-80 hover:text-white"> Correo electronico</button>
+          <button class="mt-12 border border-sky-500 rounded-full py-2 px-4 hover:bg-red-400 hover:bg-opacity-80 hover:text-white">
+            <a href="https://github.com/lucio-crDEV" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+          <button class="mt-12 border border-sky-500 rounded-full py-2 px-4 hover:bg-red-400 hover:bg-opacity-80 hover:text-white">
+            <a href="https://www.youtube.com/channel/UCcyeFqwCW3cURgchZG2fGhg" target="_blank" rel="noopener noreferrer">Youtube</a></button>
+        </div>
+      </div>
     </div>
   </section>
   <footer class="relative cursor-default">
