@@ -69,6 +69,11 @@ section {
     -1px 0px rgba(255, 210, 0, 1);
 }
 
+.svg{
+  transform: scale(1.5);
+  margin-left: 5rem;
+}
+
 #imageContainer {
   height: 100vh;
   overflow: hidden;
@@ -88,6 +93,10 @@ section {
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   cursor: default;
+}
+
+#proyectosSection{
+  width: 100%;
 }
 
 /*animation (mejorar rgb)*/

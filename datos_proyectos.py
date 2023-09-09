@@ -6,12 +6,13 @@ proyectos = [
         'imagen_id': 'https://live.staticflickr.com/65535/53127802430_de61d692b9_o.png',
         'url_proyecto': 'https://climaqui.vercel.app/',
     },
+    
     {
         'id': 2,
-        'titulo': 'Comunas por Región Chile',
-        'descripcion': 'Este script muestra una tabla con las regiones de Chile y la lista de comunas para cada región, obteniendo los datos de la API proporcionada por el Gobierno de Chile.',
-        'imagen_id': 'https://live.staticflickr.com/65535/53112345408_bbf0e59f83_o.png', 
-        'url_proyecto': 'https://github.com/lucio-crDEV/comunasPorRegion-Chile',
+        'titulo': 'Configuración entorno de trabajo profesional Parrot OS',
+        'descripcion': 'Documentación, configuraciones necesarias para un entorno de Parrot profesional.',
+        'imagen_id': 'https://live.staticflickr.com/65535/53128314702_686bdc486e_o.png', 
+        'url_proyecto': 'https://youtube.com/playlist?list=PLSuo36k_Foka09UDRCqX5IMuyNKJ4GPME',
     },
     {
         'id': 3,
@@ -34,12 +35,12 @@ proyectos = [
         'imagen_id': 'https://live.staticflickr.com/65535/53112052589_9980f91e44_o.png', 
         'url_proyecto': 'https://www.youtube.com/watch?v=RDginr1-Rgo',
     },
-    {
+        {
         'id': 6,
-        'titulo': 'WSL ZSH Script Setup',
-        'descripcion': 'Scripts de configuración para Windows Subsystem for Linux (WSL) y Zsh. Estos scripts te ayudarán a instalar y configurar las dependencias necesarias para comenzar a desarrollar en tu entorno WSL.',
-        'imagen_id': 'https://live.staticflickr.com/65535/53112263875_fc0dca7d43_o.png', 
-        'url_proyecto': 'https://github.com/lucio-crDEV/wsl-zsh-setup',
+        'titulo': 'Comunas por Región Chile',
+        'descripcion': 'Este script muestra una tabla con las regiones de Chile y la lista de comunas para cada región, obteniendo los datos de la API proporcionada por el Gobierno de Chile.',
+        'imagen_id': 'https://live.staticflickr.com/65535/53112345408_bbf0e59f83_o.png', 
+        'url_proyecto': 'https://github.com/lucio-crDEV/comunasPorRegion-Chile',
     },
     {
         'id': 7,
@@ -47,6 +48,14 @@ proyectos = [
         'descripcion': 'GitClonatore es una herramienta de línea de comandos que te permite clonar repositorios de GitHub de un usuario específico.',
         'imagen_id': 'https://live.staticflickr.com/65535/53111845961_bf856bce43_o.png', 
         'url_proyecto': 'https://github.com/lucio-crDEV/gitclonatore',
+    },
+        
+    {
+        'id': 8,
+        'titulo': 'WSL ZSH Script Setup',
+        'descripcion': 'Scripts de configuración para Windows Subsystem for Linux (WSL) y Zsh. Estos scripts te ayudarán a instalar y configurar las dependencias necesarias para comenzar a desarrollar en tu entorno WSL.',
+        'imagen_id': 'https://live.staticflickr.com/65535/53112263875_fc0dca7d43_o.png', 
+        'url_proyecto': 'https://github.com/lucio-crDEV/wsl-zsh-setup',
     },
     # Agrega más proyectos según sea necesario
 ]
